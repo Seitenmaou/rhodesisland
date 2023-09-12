@@ -1,39 +1,18 @@
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route }
+    from 'react-router-dom';
+    import Home from './pages';
+    import Operators from './pages/operators';
 
-function App() {
+    function App() {
   return (
-    <body>
-      <h1>TESTING</h1>
-      <container className="mainContainer">
-        <container className="characterDisplay">
-          <h1>Character Display</h1>
-        </container>
-        <container className = "menu">
-          <container className = "training">
-            <h1>Training</h1>
-          </container>
-          <container className = "operators">
-            <container className = "team">
-              <h1>Team</h1>
-            </container>
-            <container className = "operator">
-              <h1>Operator</h1>
-            </container>
-          </container>
-          <container className = "recruit">
-            <h1>Recruitment</h1>
-          </container>
-          <container className = "baseControls">
-            <container className = "base">
-              <h1>Base</h1>
-            </container>
-            <container className = "missions">
-              <h1>Missions</h1>
-            </container>
-          </container>
-        </container>
-      </container>
-    </body>
+    <Router>
+    <Routes>
+        <Route exact path='/' element={<Home />} />
+        <Route path='/operators' element={<Operators />} />
+    </Routes>
+</Router>
   );
 }
 

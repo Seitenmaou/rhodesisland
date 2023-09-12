@@ -1,0 +1,26 @@
+container {
+    border: black solid 1px;
+
+  }
+
+  .mainContainer {
+    margin: 3vh;
+    padding: 1vh;
+    width: 95vw;
+    height: 90vh;
+  }
+
+  .operatorList {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  .operatorCard {
+    margin: 2%;
+    width: 20vh;
+    height: 45%;
+  }
